@@ -2,7 +2,7 @@
 
 import { Button } from "@workspace/ui/components/button"
 import { Authenticated, Unauthenticated, useQuery } from "convex/react";
-import { api } from "../../../packages/database/convex/_generated/api";
+import { api } from "../../../packages/backend/convex/_generated/api";
 
 export default function Page() {
   const users = useQuery(api.users.getMany);
